@@ -1,0 +1,531 @@
+#u949
+{
+	position: absolute;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #FFFFFF;
+}
+
+#pu949:hover #u949
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#pu949:active #u949
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #6B6B6B;
+	background-color: #6B6B6B;
+	background-color: rgba(107, 107, 107, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#u950-4
+{
+	border-color: #DEDEDE;
+	background-color: transparent;
+	text-align: center;
+	color: #C4C4C4;
+	line-height: 20px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+#pu949:hover #u950-4
+{
+	border-style: none;
+	border-color: transparent;
+	position: relative;
+}
+
+#pu949:active #u950-4
+{
+	border-style: none;
+	border-color: transparent;
+	position: relative;
+}
+
+#pu949:hover #u950-4 p
+{
+	color: #6B6B6B;
+	visibility: inherit;
+}
+
+#pu949:active #u950-4 p
+{
+	color: #FFFFFF;
+	visibility: inherit;
+}
+
+#u951
+{
+	position: absolute;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #FFFFFF;
+}
+
+#pu951:hover #u951
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#pu951:active #u951
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #6B6B6B;
+	background-color: #6B6B6B;
+	background-color: rgba(107, 107, 107, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#u952-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	color: #C4C4C4;
+	line-height: 20px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+#pu949.PamphletThumbSelected #u950-4,#pu951:hover #u952-4
+{
+	border-style: none;
+	border-color: transparent;
+	position: relative;
+}
+
+#pamphletu945,#u946,#pu949 #u950-4,#pu951:active #u952-4
+{
+	position: relative;
+}
+
+#pu951:hover #u952-4 p
+{
+	color: #6B6B6B;
+	visibility: inherit;
+}
+
+#pu951:active #u952-4 p
+{
+	color: #FFFFFF;
+	visibility: inherit;
+}
+
+#u947
+{
+	position: absolute;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #FFFFFF;
+}
+
+#pu947:hover #u947
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#pu947:active #u947
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #6B6B6B;
+	background-color: #6B6B6B;
+	background-color: rgba(107, 107, 107, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#u948-4
+{
+	border-color: #DEDEDE;
+	background-color: transparent;
+	text-align: center;
+	color: #C4C4C4;
+	line-height: 20px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+#pu947:hover #u948-4
+{
+	border-color: #999999;
+	position: relative;
+}
+
+#pu947:active #u948-4
+{
+	border-color: #999999;
+	position: relative;
+}
+
+#pu947:hover #u948-4 p
+{
+	color: #6B6B6B;
+	visibility: inherit;
+}
+
+#pu947:active #u948-4 p
+{
+	color: #FFFFFF;
+	visibility: inherit;
+}
+
+#u988
+{
+	position: absolute;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #FFFFFF;
+}
+
+#pu988:hover #u988
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#pu988:active #u988
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #6B6B6B;
+	background-color: #6B6B6B;
+	background-color: rgba(107, 107, 107, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#u1394-4
+{
+	border-color: #DEDEDE;
+	background-color: transparent;
+	text-align: center;
+	color: #C4C4C4;
+	line-height: 20px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+#pu988:hover #u1394-4
+{
+	border-color: #999999;
+	position: relative;
+}
+
+#pu988:active #u1394-4
+{
+	border-color: #999999;
+	position: relative;
+}
+
+#pu988:hover #u1394-4 p
+{
+	color: #6B6B6B;
+	visibility: inherit;
+}
+
+#pu988:active #u1394-4 p
+{
+	color: #FFFFFF;
+	visibility: inherit;
+}
+
+#u995
+{
+	position: absolute;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #FFFFFF;
+}
+
+#pu995:hover #u995
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#pu995:active #u995
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #6B6B6B;
+	background-color: #6B6B6B;
+	background-color: rgba(107, 107, 107, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#u1396-4
+{
+	border-color: #DEDEDE;
+	background-color: transparent;
+	text-align: center;
+	color: #C4C4C4;
+	line-height: 20px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+#pu995:hover #u1396-4
+{
+	border-color: #999999;
+	position: relative;
+}
+
+#pu995:active #u1396-4
+{
+	border-color: #999999;
+	position: relative;
+}
+
+#pu995:hover #u1396-4 p
+{
+	color: #6B6B6B;
+	visibility: inherit;
+}
+
+#pu995:active #u1396-4 p
+{
+	color: #FFFFFF;
+	visibility: inherit;
+}
+
+#u997
+{
+	position: absolute;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: #FFFFFF;
+}
+
+#pu997:hover #u997
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#pu997:active #u997
+{
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #6B6B6B;
+	background-color: #6B6B6B;
+	background-color: rgba(107, 107, 107, 1);
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#pu949.PamphletThumbSelected #u949,#pu951.PamphletThumbSelected #u951,#pu947.PamphletThumbSelected #u947,#pu988.PamphletThumbSelected #u988,#pu995.PamphletThumbSelected #u995,#pu997.PamphletThumbSelected #u997
+{
+	background-image: none;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	-pie-background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#u1398-4
+{
+	border-color: #DEDEDE;
+	background-color: transparent;
+	text-align: center;
+	color: #C4C4C4;
+	line-height: 20px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+#pu997:hover #u1398-4
+{
+	border-color: #999999;
+	position: relative;
+}
+
+#pu997:active #u1398-4
+{
+	border-color: #999999;
+	position: relative;
+}
+
+#pu947.PamphletThumbSelected #u948-4,#pu988.PamphletThumbSelected #u1394-4,#pu995.PamphletThumbSelected #u1396-4,#pu997.PamphletThumbSelected #u1398-4
+{
+	border-style: none;
+	border-color: transparent;
+	position: relative;
+}
+
+#pu997:hover #u1398-4 p
+{
+	color: #6B6B6B;
+	visibility: inherit;
+}
+
+#pu997:active #u1398-4 p
+{
+	color: #FFFFFF;
+	visibility: inherit;
+}
+
+#pu949.PamphletThumbSelected #u950-4 p,#pu951.PamphletThumbSelected #u952-4 p,#pu947.PamphletThumbSelected #u948-4 p,#pu988.PamphletThumbSelected #u1394-4 p,#pu995.PamphletThumbSelected #u1396-4 p,#pu997.PamphletThumbSelected #u1398-4 p
+{
+	color: #000000;
+	visibility: inherit;
+}
+
+#u964
+{
+	position: absolute;
+}
+
+#u969,#u973,#u965,#u990,#u996,#u998
+{
+	border-style: none;
+	border-color: transparent;
+	position: relative;
+	background: #6B6B6B url("../images/background%20image.jpg") no-repeat center center;
+	background-size: cover !important;
+}
+
+#u970-13,#u1042-13,#u1046-13,#u1050-13,#u1054-11,#u1056-13
+{
+	color: #000000;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+}
+
+#u970-2,#u970-4,#u1042-2,#u1042-4,#u1046-2,#u1046-4,#u1050-2,#u1050-4,#u1054-2,#u1056-2,#u1056-4
+{
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+#u970-5,#u1042-5,#u1046-5,#u1050-5,#u1054-3,#u1056-5
+{
+	line-height: 20px;
+}
+
+#u970-7,#u970-9,#u970-11,#u1042-7,#u1042-9,#u1042-11,#u1046-7,#u1046-9,#u1046-11,#u1050-7,#u1050-9,#u1050-11,#u1054-5,#u1054-7,#u1054-9,#u1056-7,#u1056-9,#u1056-11
+{
+	font-size: 12px;
+	line-height: 17px;
+}
+
+#u1014-4,#u1043-6,#u1047-4,#u1051-4,#u1055-6,#u1057-6
+{
+	text-align: justify;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+}
+
+.PamphletWidget .ThumbGroup .Thumb, .PamphletNextButton, .PamphletPrevButton, .PamphletCloseButton /* pamphlet2 */
+{
+	cursor: pointer;
+}
+
+#pu951.PamphletThumbSelected #u952-4,#pu951 #u952-4,#pu947 #u948-4,#pu988 #u1394-4,#pu995 #u1396-4,#pu997 #u1398-4,#u2341,#u2347,#u2377,#u2383,#u2389,#u2395,#u2471,#u2473,#u2472-4,#u2475,#u2476,#u2478-4
+{
+	position: relative;
+}
+
+#u2472-2,#u2478-2
+{
+	font-size: 16px;
+	line-height: 22px;
+}
+
