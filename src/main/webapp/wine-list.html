@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/site_global.css?3949888170"/>
   <link rel="stylesheet" type="text/css" href="css/master_a-master.css?3912917128"/>
   <link rel="stylesheet" type="text/css" href="css/wine-list.css?4067719547" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="lib/datatables/css/jquery.dataTables.min.css">
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
@@ -106,15 +107,28 @@
           <button>Search</button>
           <button>Clear</button>
         </div>
-        <div>
-
-        </div>
       </form>
       <!--<img class="block" id="u2110_img" src="images/%e6%9c%aa%e5%91%bd%e5%90%8d-1-01.png" alt="" width="370" height="240"/>-->
      </div>
     </div>
     <div class="PamphletWidget clearfix colelem" id="pamphletu1995"><!-- none box -->
-      <div class="wine-table-container"></div>
+      <div class="wine-table-container">
+        <table id="wine-table" class="display" cellspacing="0" width="100%">
+          <thead>
+          <tr>
+            <th>Group</th>
+            <th>Region</th>
+            <th>Colour</th>
+            <th>Vintage</th>
+            <th>Wine</th>
+            <th>Score</th>
+            <th>Unit</th>
+            <th>Pack</th>
+            <th>£ / unit</th>
+          </tr>
+          </thead>
+        </table>
+      </div>
       <div class="region-list">
       <a class="wine-region">Graves</a>
       <a class="wine-region">Haut-medoc</a>
@@ -158,16 +172,44 @@
   <script src="scripts/jquery.museoverlay.js?466079611" type="text/javascript"></script>
   <script src="scripts/touchswipe.js?261777990" type="text/javascript"></script>
   <script src="scripts/jquery.watch.js?4199601726" type="text/javascript"></script>
+  <script src="lib/datatables/js/jquery.dataTables.min.js"></script>
   <!-- Other scripts -->
   <script type="text/javascript">
-   $(document).ready(function() { try {
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.initWidget('#pamphletu1995', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'mouseover',deactivationEvent:'',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true}); });/* #pamphletu1995 */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-} catch(e) { Muse.Assert.fail('Error calling selector function:' + e); }});
+    $(document).ready(function () {
+      try {
+        Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();
+        /* body */
+        Muse.Utils.prepHyperlinks(true);
+        /* body */
+        Muse.Utils.initWidget('#pamphletu1995', function (elem) {
+          new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime: 'stack', event: 'mouseover', deactivationEvent: '', autoPlay: false, displayInterval: 3000, transitionStyle: 'fading', transitionDuration: 500, hideAllContentsFirst: false, shuffle: false, enableSwipe: true});
+        });
+        /* #pamphletu1995 */
+        Muse.Utils.fullPage('#page');
+        /* 100% height page */
+        Muse.Utils.showWidgetsWhenReady();
+        /* body */
+        Muse.Utils.transformMarkupToFixBrowserProblems();
+        /* body */
+      } catch(e) {
+        Muse.Assert.fail('Error calling selector function:' + e);
+      }
+
+     $('#wine-table').dataTable({
+       ajax: 'assets/smiley-rhyme_full-list-of-wines.txt',
+       columns: [
+         {data: 'group'},
+         {data: 'region'},
+         {data: 'colour'},
+         {data: 'vintage'},
+         {data: 'wine'},
+         {data: 'score'},
+         {data: 'unit'},
+         {data: 'pack'},
+         {data: 'price'}
+       ]
+     });
+    });
 </script>
    </body>
 </html>
