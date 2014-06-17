@@ -9,8 +9,6 @@
 {
 	z-index: 1;
 	width: 960px;
-	min-height: 1462.6549868766401px;
-	padding-bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -282,13 +280,14 @@
 	position: relative;
 	margin-right: -10000px;
 	left: 197px;
+  overflow: visible;
 }
 
 #pamphletu1995
 {
 	z-index: 60;
 	width: 0.01px;
-	height: 531px;
+	height: 300px;
 	padding-bottom: 236px;
 	margin-left: 20px;
 	margin-top: 1px;
@@ -299,8 +298,6 @@
 {
   position: absolute;
   width: 710px;
-  left: 212px;
-  z-index: 73;
   width: 710px;
   height: 767px;
   margin-right: -10000px;
@@ -344,6 +341,7 @@
 	width: 298px;
 	position: relative;
 	margin-right: -10000px;
+  overflow: visible;
 }
 
 #u731-8
@@ -353,12 +351,12 @@
 	min-height: 32px;
 	margin-right: -10000px;
 	left: 327px;
+  margin-bottom: 36px;
 }
 
 body
 {
 	padding-top: 38px;
-	padding-bottom: 344px;
 }
 
 #page .verticalspacer
@@ -422,3 +420,6 @@ form.search-form > div.button button {
   font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 }
 
+#u481_img {
+  margin-top: -200px;
+}
