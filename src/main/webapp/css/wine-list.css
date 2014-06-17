@@ -319,12 +319,25 @@
 .wine-region
 {
   width: 200px;
-  height: 30px;
+  height: 32px;
   background-color: transparent;
   color: #C1272D;
   line-height: 20px;
   font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
   display: block;
+  cursor: pointer;
+}
+
+.wine-region:hover
+{
+  text-decoration: none;
+  color: #C1272D;
+}
+
+.region-list .active
+{
+  margin-left: 60px;
+  color: #000000;
 }
 
 #pu481

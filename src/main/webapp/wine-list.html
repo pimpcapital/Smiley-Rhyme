@@ -260,61 +260,93 @@
         ]
       });
 
+      function clearActive() {
+        $('.wine-region').removeClass('active');
+      }
+
       $('#region-all').click(function() {
+        clearActive();
         region = null;
         table.draw();
+        $('#region-all').addClass('active');
       });
       $('#region-graves').click(function() {
+        clearActive();
         region = 'Graves';
         table.draw();
+        $('#region-graves').addClass('active');
       });
       $('#region-haut-medoc').click(function() {
+        clearActive();
         region = 'Haut-Medoc';
         table.draw();
+        $('#region-haut-medoc').addClass('active');
       });
       $('#region-margaux').click(function() {
+        clearActive();
         region = 'Margaux';
         table.draw();
+        $('#region-margaux').addClass('active');
       });
       $('#region-medoc').click(function() {
+        clearActive();
         region = 'Medoc';
         table.draw();
+        $('#region-medoc').addClass('active');
       });
       $('#region-pauillac').click(function() {
+        clearActive();
         region = 'Pauillac';
         table.draw();
+        $('#region-pauillac').addClass('active');
       });
       $('#region-pomerol').click(function() {
+        clearActive();
         region = 'Pomerol';
         table.draw();
+        $('#region-pomerol').addClass('active');
       });
       $('#region-pessac-leognan').click(function() {
+        clearActive();
         region = 'Pessac-Leognan';
         table.draw();
+        $('#region-pessac-leognan').addClass('active');
       });
       $('#region-premieres-cotes').click(function() {
+        clearActive();
         region = 'Premieres Cotes de Bordeaux';
         table.draw();
+        $('#region-premieres-cotes').addClass('active');
       });
       $('#region-saint-julien').click(function() {
+        clearActive();
         region = 'Saint-Julien';
         table.draw();
+        $('#region-saint-julien').addClass('active');
       });
       $('#region-saint-emilion').click(function() {
+        clearActive();
         region = 'Saint-Emilion';
         table.draw();
+        $('#region-saint-emilion').addClass('active');
       });
       $('#region-saint-estephe').click(function() {
+        clearActive();
         region = 'Saint-Estephe';
         table.draw();
+        $('#region-saint-estephe').addClass('active');
       });
       $('#region-sauternes').click(function() {
+        clearActive();
         region = 'Sauternes';
         table.draw();
+        $('#region-sauternes').addClass('active');
       });
       $('#region-others').click(function() {
+        clearActive();
         region = 'Others';
         table.draw();
+        $('#region-others').addClass('active');
       });
 
       $.fn.dataTable.ext.search.push(function(settings, data) {
