@@ -10,6 +10,36 @@
   <link rel="stylesheet" type="text/css" href="css/master_a-master.css?3912917128"/>
   <link rel="stylesheet" type="text/css" href="css/wine-list.css?4067719547" id="pagesheet"/>
   <link rel="stylesheet" type="text/css" href="lib/datatables/css/jquery.dataTables.min.css">
+  <style>
+
+    div.dataTables_wrapper div.dataTables_filter {
+      color: #C1272D;
+      font-weight: bold;
+      font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      float: left;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter input {
+      border: 1px solid #C1272D;
+    }
+
+
+    table.dataTable thead tr {
+      font-size: 12px;
+    }
+
+    table.dataTable tbody tr {
+      background-color: transparent !important;
+      font-size: 11px;
+      height: 51px;
+    }
+
+    table.dataTable tbody tr > td.sorting_1 {
+      background-color:rgba(255, 255, 255,0.4) !important;
+    }
+  </style>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
@@ -197,6 +227,8 @@
 
      $('#wine-table').dataTable({
        ajax: 'assets/smiley-rhyme_full-list-of-wines.txt',
+       iDisplayLength: 12,
+       bLengthChange: false,
        columns: [
          {data: 'group'},
          {data: 'region'},

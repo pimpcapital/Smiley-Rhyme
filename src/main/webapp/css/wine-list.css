@@ -306,6 +306,7 @@
   margin-right: -10000px;
   background: #FFFFFF url("../images/free-paper-texture-2.jpg") no-repeat center center;
   background-size: cover !important;
+  padding: 40px 20px;
 }
 
 .region-list
