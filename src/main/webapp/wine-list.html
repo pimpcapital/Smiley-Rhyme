@@ -160,19 +160,20 @@
     <div class="PamphletWidget clearfix colelem" id="pamphletu1995"><!-- none box -->
 
       <div class="region-list">
-      <a class="wine-region">Graves</a>
-      <a class="wine-region">Haut-medoc</a>
-      <a class="wine-region">Margaux</a>
-      <a class="wine-region">Medoc</a>
-      <a class="wine-region">Pauillac</a>
-      <a class="wine-region">Pomerol</a>
-      <a class="wine-region">Pessac-leognan</a>
-      <a class="wine-region">Premieres cotes</a>
-      <a class="wine-region">Saint-Julien</a>
-      <a class="wine-region">Saint-Emilion</a>
-      <a class="wine-region">Saint-Estephe</a>
-      <a class="wine-region">Sauternes</a>
-      <a class="wine-region">Others</a>
+      <a class="wine-region" id="region-all">All</a>
+      <a class="wine-region" id="region-graves">Graves</a>
+      <a class="wine-region" id="region-haut-medoc">Haut-medoc</a>
+      <a class="wine-region" id="region-margaux">Margaux</a>
+      <a class="wine-region" id="region-medoc">Medoc</a>
+      <a class="wine-region" id="region-pauillac">Pauillac</a>
+      <a class="wine-region" id="region-pomerol">Pomerol</a>
+      <a class="wine-region" id="region-pessac-leognan">Pessac-Leognan</a>
+      <a class="wine-region" id="region-premieres-cotes">Premieres Cotes</a>
+      <a class="wine-region" id="region-saint-julien">Saint-Julien</a>
+      <a class="wine-region" id="region-saint-emilion">Saint-Emilion</a>
+      <a class="wine-region" id="region-saint-estephe">Saint-Estephe</a>
+      <a class="wine-region" id="region-sauternes">Sauternes</a>
+      <a class="wine-region" id="region-others">Others</a>
      </div>
     </div>
     <div class="verticalspacer"></div>
@@ -225,22 +226,115 @@
         Muse.Assert.fail('Error calling selector function:' + e);
       }
 
-     $('#wine-table').dataTable({
-       ajax: 'assets/smiley-rhyme_full-list-of-wines.txt',
-       iDisplayLength: 12,
-       bLengthChange: false,
-       columns: [
-         {data: 'group'},
-         {data: 'region'},
-         {data: 'colour'},
-         {data: 'vintage'},
-         {data: 'wine'},
-         {data: 'score'},
-         {data: 'unit'},
-         {data: 'pack'},
-         {data: 'price'}
-       ]
-     });
+      var region = null;
+      /*
+       <a class="wine-region" id="region-all">All</a>
+       <a class="wine-region" id="region-graves">Graves</a>
+       <a class="wine-region" id="region-haut-medoc">Haut-medoc</a>
+       <a class="wine-region" id="region-margaux">Margaux</a>
+       <a class="wine-region" id="region-medoc">Medoc</a>
+       <a class="wine-region" id="region-pauillac">Pauillac</a>
+       <a class="wine-region" id="region-pomerol">Pomerol</a>
+       <a class="wine-region" id="region-pessac-leognan">Pessac-Leognan</a>
+       <a class="wine-region" id="region-premieres-cotes">Premieres cotes</a>
+       <a class="wine-region" id="region-saint-julien">Saint-Julien</a>
+       <a class="wine-region" id="region-saint-emilion">Saint-Emilion</a>
+       <a class="wine-region" id="region-saint-estephe">Saint-Estephe</a>
+       <a class="wine-region" id="region-sauternes">Sauternes</a>
+       <a class="wine-region" id="region-others">Others</a>
+       */
+      var table = $('#wine-table').DataTable({
+        ajax: 'assets/smiley-rhyme_full-list-of-wines.txt',
+        iDisplayLength: 12,
+        bLengthChange: false,
+        columns: [
+          {data: 'group'},
+          {data: 'region'},
+          {data: 'colour'},
+          {data: 'vintage'},
+          {data: 'wine'},
+          {data: 'score'},
+          {data: 'unit'},
+          {data: 'pack'},
+          {data: 'price'}
+        ]
+      });
+
+      $('#region-all').click(function() {
+        region = null;
+        table.draw();
+      });
+      $('#region-graves').click(function() {
+        region = 'Graves';
+        table.draw();
+      });
+      $('#region-haut-medoc').click(function() {
+        region = 'Haut-Medoc';
+        table.draw();
+      });
+      $('#region-margaux').click(function() {
+        region = 'Margaux';
+        table.draw();
+      });
+      $('#region-medoc').click(function() {
+        region = 'Medoc';
+        table.draw();
+      });
+      $('#region-pauillac').click(function() {
+        region = 'Pauillac';
+        table.draw();
+      });
+      $('#region-pomerol').click(function() {
+        region = 'Pomerol';
+        table.draw();
+      });
+      $('#region-pessac-leognan').click(function() {
+        region = 'Pessac-Leognan';
+        table.draw();
+      });
+      $('#region-premieres-cotes').click(function() {
+        region = 'Premieres Cotes de Bordeaux';
+        table.draw();
+      });
+      $('#region-saint-julien').click(function() {
+        region = 'Saint-Julien';
+        table.draw();
+      });
+      $('#region-saint-emilion').click(function() {
+        region = 'Saint-Emilion';
+        table.draw();
+      });
+      $('#region-saint-estephe').click(function() {
+        region = 'Saint-Estephe';
+        table.draw();
+      });
+      $('#region-sauternes').click(function() {
+        region = 'Sauternes';
+        table.draw();
+      });
+      $('#region-others').click(function() {
+        region = 'Others';
+        table.draw();
+      });
+
+      $.fn.dataTable.ext.search.push(function(settings, data) {
+        if(region == null)
+          return true;
+        if(region == 'Others') {
+          var neg = ['Graves', 'Haut-Medoc', 'Margaux', 'Medoc', 'Pauillac', 'Pomerol', 'Pessac-Leognan', 'Premieres Cotes de Bordeaux', 'Saint-Julien', 'Saint-Emilion', 'Saint-Estephe', 'Sauternes'];
+          var match = false;
+          $.each(neg, function(index, keyword) {
+            if(data[1] == keyword) {
+              match = true;
+              return false;
+            } else {
+              return true;
+            }
+          });
+          return !match;
+        }
+        return data[1] == region;
+      });
     });
 </script>
    </body>
