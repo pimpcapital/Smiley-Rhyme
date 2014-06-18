@@ -39,7 +39,7 @@ function emailFormSubmission()
 	$formEmail = cleanupEmail($_REQUEST['Email']);
 	$headers = 'From:  enquiry@smileyrhyme.com' . "\r\n" . 'Reply-To: ' . $formEmail .  "\r\n" .'X-Mailer: Adobe Muse 7.4.30 with PHP/' . phpversion() . "\r\n" . 'Content-type: text/html; charset=utf-8' . "\r\n";
 	
-	$sent = @mail($to, $subject, $message, $headers);
+	$sent = mail($to, $subject, $message, $headers);
 	
 	if($sent)
 	{
